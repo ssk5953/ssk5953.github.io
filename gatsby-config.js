@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Gatsby + WordPress Starter',
   },
@@ -25,7 +26,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     {
       // Removes unused css rules
-      resolve:'gatsby-plugin-purgecss',
+      resolve: 'gatsby-plugin-purgecss',
       options: {
         // Activates purging in gatsby develop
         develop: true,
