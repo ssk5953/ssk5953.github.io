@@ -3,6 +3,21 @@ module.exports = {
     title: 'Gatsby + WordPress Starter',
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        // path: "${__dirname}/src/content/post",
+        path: "./src/content/post",
+        name: "post"
+      }
+    },
+    'gatsby-transformer-remark',
+    // {
+    //   resolve: 'gatsby-plugin-typography',
+    //   options: {
+    //     pathToConfigModule: 'src/'
+    //   }
+    // },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
